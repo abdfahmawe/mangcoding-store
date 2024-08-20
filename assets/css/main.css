@@ -13,6 +13,7 @@ body {
 .header .logo {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 2px;
 }
 
@@ -22,9 +23,13 @@ body {
 .header .logo a {
   color: var(--mainColor);
 }
+.header .menu {
+  display: none;
+}
 .nav ul {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 16px;
 }
 .nav ul li a {
@@ -38,10 +43,9 @@ body {
   align-items: center;
   gap: 10px;
   text-align: center;
+  flex-wrap: wrap;
 }
 .auth a {
-  width: 75px;
-  height: 20px;
   font-family: var(--subFont);
   border-radius: 10px;
   padding: 5.3541765213012695px 30.18113136291504px;
@@ -54,4 +58,18 @@ body {
 .auth .register {
   background-color: var(--mainColor);
   color: white;
+}
+
+/* 
+  media for head
+*/
+
+@media screen and (max-width: 922px) {
+  .nav {
+    display: none;
+  }
+  .header .menu {
+    display: block;
+    order: 2;
+  }
 }
