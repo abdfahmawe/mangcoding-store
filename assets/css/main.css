@@ -73,3 +73,52 @@ body {
     order: 2;
   }
 }
+.footer {
+  background-color: #393e46;
+  padding: 100px 0;
+  color: white;
+}
+.footer a {
+  color: white;
+}
+.footer .left-side {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.footer .left-side .logo {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2px;
+}
+
+.footer .left-side img {
+  width: 35px;
+}
+.footer .left-side .logo a {
+  font-family: "Roboto";
+}
+/* .footer .left-side .icons img {
+  border: 1px solid white;
+  padding: 10px;
+} */
+/* _________________________________________________________________________ */
+.footer .right-side {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-grow: 1;
+}
+.footer .right-side .footer-end-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer .right-side .footer-end-item nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
