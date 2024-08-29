@@ -38,7 +38,7 @@ body {
 .nav ul li .active {
   font-weight: 900;
 }
-.auth {
+.header .auth {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -60,10 +60,6 @@ body {
   color: white;
 }
 
-/* 
-  media for head
-*/
-
 @media screen and (max-width: 922px) {
   .nav {
     display: none;
@@ -74,10 +70,68 @@ body {
   }
 }
 @media screen and (max-width: 600px) {
-  .auth {
+  .header .auth {
     display: none;
   }
 }
+.introduction {
+  background: white;
+  padding: 50px 0;
+}
+.introduction .row {
+  align-items: flex-start;
+}
+.introduction .about {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.introduction span {
+  color: var(--mainColor);
+  font-family: var(--subFont);
+}
+.introduction h1 span {
+  font-family: var(--mainFont);
+}
+.introduction .auth {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.introduction h1 {
+  font-size: 60px;
+}
+.introduction p {
+  color: #969696;
+}
+
+.introduction .register {
+  font-family: var(--subFont);
+  border-radius: 10px;
+  padding: 5.3541765213012695px 30.18113136291504px;
+  border: 2px solid var(--mainColor);
+  font-weight: 700;
+  background-color: var(--mainColor);
+  color: white;
+}
+.introduction .img {
+  justify-content: center;
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 922px) {
+  .introduction .about {
+    width: 100%;
+  }
+  .introduction .row {
+    gap: 30px;
+  }
+}
+
 .Testimonials {
   padding: 50px 0;
   background-color: rgb(255, 255, 255);
@@ -155,11 +209,7 @@ body {
 .footer .left-side .logo a {
   font-family: "Roboto";
 }
-/* .footer .left-side .icons img {
-  border: 1px solid white;
-  padding: 10px;
-} */
-/* _________________________________________________________________________ */
+
 .footer .right-side {
   display: flex;
   flex-wrap: wrap;
