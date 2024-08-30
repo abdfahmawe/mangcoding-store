@@ -45,7 +45,7 @@ body {
   text-align: center;
   flex-wrap: wrap;
 }
-.auth a {
+header .auth a {
   font-family: var(--subFont);
   border-radius: 10px;
   padding: 5.3541765213012695px 30.18113136291504px;
@@ -92,6 +92,9 @@ body {
   color: var(--mainColor);
   font-family: var(--subFont);
 }
+.introduction span span {
+  font-weight: bold;
+}
 .introduction h1 span {
   font-family: var(--mainFont);
 }
@@ -116,6 +119,11 @@ body {
   background-color: var(--mainColor);
   color: white;
 }
+.introduction .auth a {
+  align-items: center;
+  display: flex;
+  border-radius: 10px;
+}
 .introduction .img {
   justify-content: center;
   display: flex;
@@ -124,7 +132,7 @@ body {
   height: 100%;
 }
 .introduction .img img {
-  width: 600px;
+  width: 500px;
   height: 100%;
 }
 @media screen and (max-width: 1200px) {
@@ -162,7 +170,7 @@ body {
 }
 .whatWeGive {
   padding: 100px 0;
-  padding-top: 200px;
+  padding-top: 300px;
 }
 .whatWeGive .container {
   margin-right: 30px;
@@ -248,6 +256,9 @@ body {
   .whatWeGive .services .LeftandRight {
     margin: 0;
   }
+  .whatWeGive .container {
+    margin: auto;
+  }
 }
 .Testimonials {
   padding: 50px 0;
@@ -272,6 +283,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  position: relative;
 }
 .Testimonial .user {
   display: flex;
@@ -293,11 +305,33 @@ body {
 .Testimonial .user .info span {
   color: #969696;
 }
+.Testimonials .Testimonial::after {
+  content: "";
+  border: 40px solid;
+  border-color: #f4f4f4 #f4f4f4 transparent transparent;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
 @media screen and (max-width: 768px) {
   .Testimonial {
     width: 100%;
   }
+  .Testimonial h2 {
+    font-size: 17px;
+  }
 }
+@media screen and (max-width: 400px) {
+  .Testimonials .Testimonial::after {
+    content: "";
+    border: 20px solid;
+    border-color: #f4f4f4 #f4f4f4 transparent transparent;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+}
+
 .footer {
   background-color: #393e46;
   padding: 50px 0;
