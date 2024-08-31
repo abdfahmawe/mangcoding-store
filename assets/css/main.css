@@ -268,8 +268,11 @@ header .auth a {
 .AboutOurCourses .row {
   justify-content: space-evenly;
 }
-.AboutOurCourses img {
+.AboutOurCourses .image {
   width: 45%;
+}
+.AboutOurCourses img {
+  width: 100%;
 }
 .AboutOurCourses .info {
   width: 45%;
@@ -322,9 +325,7 @@ header .auth a {
   .AboutOurCourses .row {
     gap: 50px;
   }
-  .AboutOurCourses img {
-    width: 60%;
-  }
+
   .AboutOurCourses .info {
     width: 80%;
   }
@@ -336,14 +337,15 @@ header .auth a {
   .AboutOurCourses .info .ratios {
     gap: 35px;
   }
+  .AboutOurCourses .image {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 480px) {
   .AboutOurCourses .info h3 {
     font-size: 20px;
   }
-  .AboutOurCourses img {
-    width: 80%;
-  }
+
   .AboutOurCourses .info .ratios h4 {
     font-size: 26px;
   }
