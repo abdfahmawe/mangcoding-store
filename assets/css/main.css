@@ -260,6 +260,110 @@ header .auth a {
     margin: auto;
   }
 }
+.AboutOurCourses {
+  padding: 30px 0;
+  color: white;
+  background-image: linear-gradient(#545be8, #272db0);
+}
+.AboutOurCourses .row {
+  justify-content: space-evenly;
+}
+.AboutOurCourses img {
+  width: 45%;
+}
+.AboutOurCourses .info {
+  width: 45%;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.AboutOurCourses .info h3 {
+  font-size: 55px;
+}
+.AboutOurCourses .info .changefont {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 20px;
+}
+.AboutOurCourses .info .ratios {
+  display: flex;
+  gap: 20%;
+  flex-wrap: wrap;
+}
+.AboutOurCourses .info .ratios h4 {
+  font-size: 30px;
+}
+.AboutOurCourses .info .ratios div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.AboutOurCourses .yellow {
+  color: #f0c932;
+}
+.AboutOurCourses .gray {
+  color: #dddddd;
+}
+.AboutOurCourses .Inter {
+  font-family: var(--subFont);
+}
+@media screen and (min-width: 1500px) {
+  .AboutOurCourses .info h3 {
+    font-size: 70px;
+  }
+  .AboutOurCourses .info p {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .AboutOurCourses .row {
+    gap: 50px;
+  }
+  .AboutOurCourses img {
+    width: 60%;
+  }
+  .AboutOurCourses .info {
+    width: 80%;
+  }
+  .AboutOurCourses .info h3 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .AboutOurCourses .info .ratios {
+    gap: 35px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .AboutOurCourses .info h3 {
+    font-size: 20px;
+  }
+  .AboutOurCourses img {
+    width: 80%;
+  }
+  .AboutOurCourses .info .ratios h4 {
+    font-size: 26px;
+  }
+  .AboutOurCourses .info .ratios div {
+    align-items: flex-start;
+  }
+}
+@media screen and (max-width: 384px) {
+  .AboutOurCourses .info .ratios div {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 300px) {
+  .AboutOurCourses .info .changefont {
+    font-size: 16px;
+  }
+  .AboutOurCourses .info h3 {
+    font-size: 26px;
+  }
+}
 .Testimonials {
   padding: 50px 0;
   background-color: rgb(255, 255, 255);
