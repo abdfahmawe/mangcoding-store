@@ -428,14 +428,21 @@ header .auth a {
   width: 100%;
   height: 100%;
 }
-.Courses .courses-items .course .gaping {
-  justify-content: flex-start;
-  gap: 20px;
-  color: #969696;
-}
+
 .Courses .courses-items .course .info {
   background-color: white;
   padding: 13px;
+}
+.Courses .courses-items .course .info .spacing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.Courses .courses-items .course .info .gaping {
+  justify-content: flex-start;
+  gap: 20px;
+  color: #969696;
 }
 .Courses .courses-items .course .info h4 {
   font-size: 18px;
@@ -472,6 +479,47 @@ header .auth a {
   display: flex;
   border-radius: 10px;
   width: fit-content;
+}
+@media screen and (max-width: 1000px) {
+  .Courses .courses-items {
+    width: 100%;
+  }
+  .Courses .courses-description {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 680px) {
+  .Courses .courses-items .course {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 390px) {
+  .Courses .courses-items .course .info h4,
+  .Courses .courses-items .course .info .views {
+    width: 100%;
+  }
+  .Courses .courses-items .course .info .spacing {
+    gap: 0px;
+  }
+  .Courses .courses-items .course .course-info .left {
+    padding: 2px;
+  }
+  .Courses .courses-items .course .info .gaping span {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 330px) {
+  .Courses .courses-items .course .gaping {
+    gap: 40px;
+  }
+  .Courses .courses-items .course .gaping span {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 300px) {
+  .Courses .courses-items .course .course-info .left {
+    background-color: transparent;
+  }
 }
 .Testimonials {
   padding: 50px 0;
